@@ -18,7 +18,7 @@
     {{ csrf_field() }}
     
     <div class="form-group">
-        <label for="title">Title</label>
+        <label for="title">Product Name</label>
         <input type="text" name="title" class="form-control" id="title" placeholder="Title..." value="{{ old('title') }}">
     </div>
     <div class="form-group">
@@ -26,7 +26,7 @@
         <input type="file" name="image[]" class="form-control-file" id="image" multiple>
     </div>
     <div class="form-group">
-        <label for="content">Insert Content</label>
+        <label for="content">Product Description</label>
         <textarea name="post_content" id="content">{{ old('post_content') }}</textarea>
     </div>
 
